@@ -7,7 +7,7 @@ type Props = {
 
 const Pagetitle = ({page}: Props) =>{
   return (
-    <div className='flex flex-row gap-4 px-8 lg:px-7.5 my-12 items-center '>
+    <div className='flex flex-row gap-4 padding-x my-12 items-center '>
         <Link href="/">
             <svg className="h-8 w-8 stroke-black"  
             viewBox="0 0 24 24"  

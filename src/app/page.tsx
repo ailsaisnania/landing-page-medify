@@ -46,7 +46,7 @@ export default function Home() {
       </div>
       <div className='h-max bg-gradient-blue px-8 lg:px-7.5 py-8 lg:py-12 flex flex-row justify-between'>
         <h4 className='text-medify-white max-w-sm'>SEGERA DAPATKAN PRODUK KAMI</h4>
-        <Link href='/'>
+        <Link href='/formulir'>
           <button className="btn btn-secondary">DEMO</button>
         </Link> 
       </div>

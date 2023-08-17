@@ -18,14 +18,14 @@ function Navbar() {
                 <div className="flex-none hidden lg:block">
                     <ul className="menu menu-horizontal body-2 gap-8">
                         {NavLinks.map((link) => (
-                            <Link href={link.href} key={link.text}>
+                            <Link className='hover:text-medify-blue-500' href={link.href} key={link.text}>
                             {link.text}
                             </Link>
                         ))}
                     </ul>
                 </div>
                 <div className='flex-none hidden lg:block ml-10'>
-                    <Link href='/'>
+                    <Link href='/formulir'>
                         <button className="btn btn-primary">DEMO</button>
                     </Link>
                 </div>
@@ -36,7 +36,7 @@ function Navbar() {
                             viewBox="0 0 24 24" 
                             strokeWidth="2" 
                             className="inline-block w-8 h-8 stroke-medify-blue-500">
-                            <path stroke-linecap="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                            <path strokeLinecap="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                         </svg>
                     </label>
                 </div> 
@@ -48,13 +48,13 @@ function Navbar() {
             <div className="px-8 py-4 w-10/12 h-full bg-medify-white flex flex-col items-center">
                 <ul className="menu body-1 font-bold gap-8 text-center">
                     {NavLinks.map((link) => (
-                        <Link href={link.href} key={link.text}>
+                        <Link className='hover:text-medify-blue-500' href={link.href} key={link.text}>
                         {link.text}
                         </Link>
                     ))}
                 </ul>
                 <div className='mt-8'>
-                    <Link href='/'>
+                    <Link href='/formulir'>
                         <button className="btn btn-primary">DEMO</button>
                     </Link>
                 </div>
