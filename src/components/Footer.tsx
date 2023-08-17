@@ -32,9 +32,9 @@ const Footer = () => {
                             <svg className="h-12 w-12 stroke-medify-blue-500"  
                             viewBox="0 0 24 24"  fill="none"  
                             stroke="#3D6EC6"  
-                            stroke-width="2"  
-                            stroke-linecap="round"  
-                            stroke-linejoin="round">  
+                            strokeWidth="2"  
+                            strokeLinecap="round"  
+                            strokeLinejoin="round">  
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
@@ -45,7 +45,7 @@ const Footer = () => {
                         <div className=" bg-medify-blue-500 flex justify-center items-center rounded mt-1 py-2 px-1 mx-auto">
                             <svg className="h-8 w-10 stroke-medify-white"  
                             viewBox="0 0 24 24"  fill="white"   
-                            stroke-width="2"  
+                            strokeWidth="2"  
                             strokeLinecap="round"  
                             strokeLinejoin="round">  
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  
