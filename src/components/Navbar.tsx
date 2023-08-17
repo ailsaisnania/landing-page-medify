@@ -18,7 +18,7 @@ function Navbar() {
                 <div className="flex-none hidden lg:block">
                     <ul className="menu menu-horizontal body-2 gap-8">
                         {NavLinks.map((link) => (
-                            <Link className='hover:text-medify-blue-500' href={link.href} key={link.text}>
+                            <Link className='hover:text-medify-blue-500' href={link.href} key={link.id}>
                             {link.text}
                             </Link>
                         ))}
@@ -48,7 +48,7 @@ function Navbar() {
             <div className="px-8 py-4 w-10/12 h-full bg-medify-white flex flex-col items-center">
                 <ul className="menu body-1 font-bold gap-8 text-center">
                     {NavLinks.map((link) => (
-                        <Link className='hover:text-medify-blue-500' href={link.href} key={link.text}>
+                        <Link className='hover:text-medify-blue-500' href={link.href} key={link.id}>
                         {link.text}
                         </Link>
                     ))}

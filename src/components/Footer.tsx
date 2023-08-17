@@ -5,7 +5,7 @@ import { NavLinks } from '@/constant'
 
 const Footer = () => {
   return (
-    <section className='flex-col paddings w-full flex min-h-fit padding-x py-8 lg:py-24 '>
+    <section className='flex-col paddings w-full flex min-h-fit padding-x py-8 lg:py-24 shadow-y'>
         <div className='flex flex-col  w-full '>
             <Image src="/logo.png" width={176} height={98} alt="logo"/>
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
             <div className='flex flex-col gap-4 w-48 '>
                 <h6 >PERUSAHAAN</h6>
                 {NavLinks.map((link) => (
-                    <Link className='body-2 hover:text-medify-blue-500' href={link.href} key={link.text}>
+                    <Link className='body-2 hover:text-medify-blue-500' href={link.href} key={link.id}>
                     {link.text}
                     </Link>
                 ))}

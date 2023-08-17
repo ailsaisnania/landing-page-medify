@@ -1,19 +1,28 @@
 'use client'
 import Pagetitle from '@/components/Pagetitle'
-import { InputForm } from '@/constant'
-import React,{useState} from 'react'
+import { InputTextForm, SesiDemo, TahuMedify } from '@/constant'
+import React, {useState} from "react"; 
+import Datepicker from "react-tailwindcss-datepicker"; 
+import Link from 'next/link';
+
 
 function page() {
-    const [date,setDate]=useState();
-
-    console.log("Date", date);
+    const [value, setValue] = useState({ 
+        startDate: null, 
+        endDate: null 
+    }); 
+        
+    const handleValueChange = (newValue) => {
+        console.log("newValue:", newValue); 
+        setValue(newValue); 
+    } 
 
   return (
     <section>
         <Pagetitle
             page='Demo'/>
         <div className='padding-x'>
-            <div className='px-20 flex flex-col gap-5'>
+            <div className='px-0 lg:px-20 flex flex-col gap-5'>
                 <h4>Formulir</h4>
                 <hr className='w-28 h-1 bg-medify-blue-100 border-0 rounded'/>
                 <h3 className=' text-medify-blue-500'>Permintaan Demo Aplikasi Medify</h3>
@@ -21,17 +30,63 @@ function page() {
                     Demo akan dilakukan secara online via Zoom dan tidak dipungut biaya.</p>
 
                 <form className='flex flex-col gap-4'>
-                    {InputForm.map((form) => (
-                        <div className='form-control gap-2'>
+                    {InputTextForm.map((form) => (
+                        <div className='form-control gap-2' key={form.id}>
                             <label className='label button-text'>{form.title}</label>
-                            <input type="text" placeholder={form.placeholder} name={form.name} className="rounded-xl input input-bordered input-sm lg:input-md w-full max-w-md " />
+                            <input type="text" placeholder={form.placeholder} name={form.key} className="rounded-xl input input-bordered input-sm lg:input-lg w-full max-w-xl " />
                         </div>
                     ))}
 
-                    <hr className=' w-2/5 my-4 h-[1px] bg-black'/>
-                    <div>
-                        <input type='date' onChange={e=>setDate(e.target.value)} />
+                    <hr className='w-full lg:w-[51%] my-4 h-[1px] bg-black'/>
+
+                    <div className='form-control gap-6'>
+                        <label className='label button-text'>Jadwalkan Demo*</label>
+                        <div className='max-w-xl'>
+                            <Datepicker 
+                                primaryColor={"blue"} 
+                                useRange={false} 
+                                asSingle={true}
+                                value={value} 
+                                onChange={handleValueChange} 
+                                displayFormat={"DD/MM/YYYY"}
+                            /> 
+                        </div>
                     </div>
+
+                    <div className='form-control gap-6 mt-2'>
+                        <label className='label button-text'>Sesi Demo</label>
+                        {SesiDemo.map((sesi) => (
+                            <div className='flex flex-row items-center gap-4'>
+                                <input type="checkbox" id={sesi.id} name={sesi.name} value={sesi.label} className='cb'/> 
+                                <label htmlFor={sesi.id} className='body-2'>{sesi.label}</label>
+                            </div>
+                        ))}
+                    </div>
+
+                    <hr className='w-full lg:w-[51%] mt-4 h-[2px] bg-black'/>
+
+                    <div className='form-control gap-6'>
+                        <label className='label button-text'>Dari mana Anda mengetahui Medify?</label>
+                        {TahuMedify.map((tahu) => (
+                            <div className='flex flex-row items-center gap-4'>
+                                <input type="checkbox" id={tahu.id} name={tahu.name} value={tahu.label} className='cb'/> 
+                                <label htmlFor={tahu.id} className='body-2'>{tahu.label}</label>
+                            </div>
+                        ))}
+                    </div>
+
+                    <hr className='w-full lg:w-[51%] my-4 h-[1.5px] bg-black'/>
+                    <div className='flex flex-row items-center gap-4'>
+                        <input type="checkbox" id='persetujuan' name='persutujuan' value='Setuju' className='cb'/> 
+                        <label htmlFor='persutujuan' className='body-2 lg:max-w-lg'>
+                            Dengan ini, saya menyetujui 
+                            <Link href='/' className='font-bold text-medify-blue-500 hover:underline'> Syarat & Ketentuan </Link> 
+                            dan 
+                            <Link href='/' className='font-bold text-medify-blue-500 hover:underline'> Kebijakan Privasi</Link>
+                        </label>
+                    </div>
+
+                    <button className='btn btn-form max-w-xl mt-12 mb-24' type='button'>Daftar</button>
 
                 </form>
             </div>

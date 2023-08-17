@@ -56,6 +56,10 @@
     @apply bg-medify-blue-500 text-medify-white hover:bg-medify-blue-300 active:bg-medify-blue-300
   }
 
+  .btn-form{
+    @apply bg-medify-white text-medify-gray-100 outline outline-offset-2 outline-1 hover:bg-medify-blue-500 hover:outline-0 hover:text-medify-white
+  }
+
   .arrow-inactive{
     @apply bg-medify-white stroke-medify-gray-100 active:bg-medify-blue-500 active:stroke-medify-white
   }
@@ -72,6 +76,10 @@
     @apply px-8 lg:px-7.5
   }
   
+  .cb{
+    @apply w-8 h-8 border-[3px] lg:w-14 lg:h-14 lg:border-[4px] rounded-lg accent-white border-medify-gray-100 appearance-none checked:border-medify-blue-500
+  }
+
 }
 
 @layer components {
@@ -81,6 +89,11 @@
 
   .arrow{
     @apply h-14 w-14 rounded-lg p-4 stroke-[3px] bg-medify-blue-500 stroke-medify-white hover:bg-medify-blue-300 hover:stroke-medify-white
+  }
+
+  [type='checkbox']:checked {
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="rgb(61 110 198)" xmlns="http://www.w3.org/2000/svg"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"/></svg>');
+    background-repeat: no-repeat;
   }
 
 }
