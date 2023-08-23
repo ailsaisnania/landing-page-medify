@@ -1,37 +1,39 @@
+import { url } from "inspector";
+
 export const NavLinks = [
-  { id: 1 , href: '/', key: 'Tentang Kami', text: 'Tentang Kami' },
-  { id: 2 ,href: '/solusi', key: 'Solusi', text: 'Solusi' },
-  { id: 3 ,href: '/', key: 'Blog', text: 'Blog' },
-  { id: 4 ,href: '/', key: 'Karier', text: 'Karier' },
+  { id: "1" , href: '/', key: 'Tentang Kami', text: 'Tentang Kami' },
+  { id: "2" ,href: '/solusi', key: 'Solusi', text: 'Solusi' },
+  { id: "3" ,href: '/', key: 'Blog', text: 'Blog' },
+  { id: "4" ,href: '/karier', key: 'Karier', text: 'Karier' },
 ];
 
 export const InputTextForm = [
   { 
-    id: 1 ,
+    id: '1' ,
     title: 'Nama Lengkap*', 
     key:'nama_lengkap',
     placeholder: 'Nama Lengkap'
   },
   {
-    id: 2 ,
+    id: '2' ,
     title: 'Nomor WhatsApp*', 
     key:'nomor_wa',
     placeholder: 'Nomor WhatsApp'
   },
   {
-    id: 3 ,
+    id: '3 ',
     title: 'Email*', 
     key:'email',
     placeholder: 'Email'
   },
   {
-    id: 4 ,
+    id: '4' ,
     title: 'Nama Faskes*', 
     key:'nama_faskes',
     placeholder: 'Nama Faskes'
   },
   {
-    id: 5 ,
+    id: '5' ,
     title: 'Alamat Faskes*', 
     key:'alamat_faskes',
     placeholder: 'Alamat Faskes'
@@ -51,4 +53,45 @@ export const TahuMedify = [
   {id: 'tahu_medify_4', label: 'Individu Lain', name:'individu_lain'},
   {id: 'tahu_medify_5', label: 'Event', name:'event'},
   {id: 'tahu_medify_6', label: 'Lainnya', name:'lainnya'},
+]
+
+export const LowonganJob = [
+  {
+    id: '1',
+    pekerjaan: 'Job Title',
+    link: '/'
+  },
+  {
+    id: '2',
+    pekerjaan: 'Job Title',
+    link: '/'
+  }
+  
+]
+
+export const KelebihanMedify = [
+  {
+    id: '1',
+    icon: '/icon/analytics.svg',
+    title: 'ANALYTICS',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor '
+  },
+  {
+    id: '2',
+    icon: '/icon/aipowered.svg',
+    title: 'AI-POWERED',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor '
+  },
+  {
+    id: '3',
+    icon: '/icon/integrated.svg',
+    title: 'INTEGRATED SYSTEM',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor '
+  },
+  {
+    id: '4',
+    icon: '/icon/userfriendly.svg',
+    title: 'USER FRIENDLY',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor '
+  }
 ]

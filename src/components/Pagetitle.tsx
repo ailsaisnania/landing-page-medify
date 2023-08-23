@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faMinus} from '@fortawesome/free-solid-svg-icons'
 
 type Props = {
     page: string
@@ -7,7 +9,7 @@ type Props = {
 
 const Pagetitle = ({page}: Props) =>{
   return (
-    <div className='flex flex-row gap-4 padding-x my-12 items-center '>
+    <section  className='flex flex-row gap-4 padding-x my-12 items-center '>
         <Link href="/">
             <svg className="h-8 w-8 stroke-black"  
             viewBox="0 0 24 24"  
@@ -19,17 +21,11 @@ const Pagetitle = ({page}: Props) =>{
             <polyline points="9 22 9 12 15 12 15 22" /></svg>
         </Link>
 
-        <svg xmlns="http://www.w3.org/2000/svg" 
-        fill="none" viewBox="0 0 24 24" 
-        strokeWidth="2" stroke="currentColor" 
-        className="w-6 h-6">
-        <path strokeLinecap="round" strokeLinejoin="round" 
-        d="M19.5 12h-15" />
-        </svg>
+        <FontAwesomeIcon className='w-6 h-6' icon={faMinus} />
 
         <p className='body-2'>{page}</p>
 
-    </div>
+    </section>
   )
 }
 

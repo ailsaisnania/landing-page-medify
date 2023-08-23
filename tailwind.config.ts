@@ -44,7 +44,7 @@ const config: Config = {
       });
       addUtilities({
         ".gradient-blue": {
-          "@apply from-medify-white via-medify-blue-300 to-medify-blue-500": {},
+          "@apply bg-gradient-to-r from-medify-blue-200 via-medify-blue-300 to-medify-blue-500": {},
         },
         ".gradient-white": {
           "@apply from-[#F5FAFF] via-[#EEF6FF] to-[#E8F3FF]": {},
