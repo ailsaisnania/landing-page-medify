@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = forwardRef<
   const buttonColorAlternateClasses =
     "bg-medify-white text-medify-blue-500 hover:bg-medify-blue-500 hover:text-medify-white active:bg-medify-blue-500 active:text-medify-white";
   const buttonColorDefaultClasses =
-    "bg-medify-blue-500 text-medify-white hover:bg-medify-blue-300 active:bg-medify-blue-300";
+    "bg-medify-blue-500 text-medify-white hover:bg-medify-white hover:border-medify-blue-300 hover:text-medify-blue-300 active:bg-medify-blue-300";
 
   return (
     <button

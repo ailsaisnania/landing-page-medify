@@ -1,10 +1,11 @@
 import { url } from "inspector";
 
 export const NavLinks = [
-  { id: "1" , href: '/', key: 'Tentang Kami', text: 'Tentang Kami' },
+  { id: "1" , href: '/about', key: 'Tentang Kami', text: 'Tentang Kami' },
   { id: "2" ,href: '/solusi', key: 'Solusi', text: 'Solusi' },
-  { id: "3" ,href: '/', key: 'Blog', text: 'Blog' },
+  { id: "3" ,href: '/detailblog', key: 'Blog', text: 'Blog' },
   { id: "4" ,href: '/karier', key: 'Karier', text: 'Karier' },
+
 ];
 
 export const InputTextForm = [
