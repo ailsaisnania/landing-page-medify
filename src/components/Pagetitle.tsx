@@ -23,7 +23,7 @@ const Pagetitle = ({page}: Props) =>{
 
         <FontAwesomeIcon className='w-6 h-6' icon={faMinus} />
 
-        <p className='body-2'>{page}</p>
+        <p className='body-2'>{page} </p>
 
     </section>
   )

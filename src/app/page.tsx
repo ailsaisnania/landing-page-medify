@@ -1,8 +1,12 @@
+'use client'
 import Button from '@/components/Button'
 import Gridcard from '@/components/Gridcard'
 import Hero from '@/components/Hero'
+import { IcrementCount } from '@/components/IcrementCount'
+import CarouselRS from '@/components/CarouselRS'
+import VideoSection from '@/components/VideoSection'
+import SliderTestimoni from '@/components/SliderTestimoni'
 import { KelebihanMedify } from '@/constant'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
@@ -14,14 +18,8 @@ export default function Home() {
           <h4 className='text-center text-medify-white'>Lorem ipsum dolor sit amet</h4>
         </section>
         
-        <section className='screen flex flex-col text-center justify-center gap-12'>
-          <h4>Transformasi Digital <span className=' text-medify-blue-500'>Fasilitas Kesehatan</span></h4>
-            <div className='flex justify-center'>
-              <Link href=''>
-                <Image src='/frameyt.png' width={500} height={178} className='rounded-xl' alt='Thumbnail YT'/>
-              </Link>
-            </div>
-          <p className='body-2 lg:px-32'>Berdasarkan Permenkes No. 24 tahun 2022 (Pasal 45), seluruh fasilitas kesehatan diwajibkan menyelenggarakan Rekam Medis Digital paling lambat 31 Desember 2023.</p>
+        <section>
+          <VideoSection/>
         </section>
 
         <section className='flex flex-col lg:flex-row gap-10 lg:gap-32 screen bg-medify-blue-100'>
@@ -37,20 +35,37 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='screen flex flex-col gap-24 justify-center items-center'>
+        <section className='h-auto padding-x lg:py-16 py-10 flex flex-col gap-12 lg:gap-24 justify-center items-center'>
           <h2>Kami Telah <span className=' text-medify-blue-500'>Dipercaya</span></h2>
+          <CarouselRS/>
+          <div className='flex flex-row gap-12 lg:gap-32'>
+              <div className='flex flex-col gap-4 text-center'>
+                <IcrementCount start='0' finish='35' plus={1}/>
+                <p className='body-2'>Faskes</p>
+              </div>
+              <div className='flex flex-col gap-4 text-center'>
+                <IcrementCount start='0' finish='1500' plus={50}/>
+                <p className='body-2'>Dokter</p>
+              </div>
+              <div className='flex flex-col gap-4 text-center'>
+                <h3 className=' text-medify-blue-500'>4 Juta +</h3>
+                <p className='body-2'>Pasien</p>
+              </div>
+              <div className='flex flex-col gap-4 text-center'>
+                <h3 className=' text-medify-blue-500'>5 Juta +</h3>
+                <p className='body-2'>Kasus</p>
+              </div>
+          </div>
         </section>
 
-        <section className='screen bg-medify-blue-100'>
-
-        </section>
+        <SliderTestimoni/>
 
       </div>
 
       <section className='h-max gradient-blue px-8 lg:px-7.5 py-8 lg:py-12 flex flex-row justify-between'>
         <h4 className='text-medify-white max-w-sm'>SEGERA DAPATKAN PRODUK KAMI</h4>
         <Link href='/formulir'>
-          <Button buttonType='alternate'>DEMO</Button>
+          <Button buttonType='alternate' onClick={() => window.location.href='/formulir'}>DEMO</Button>
         </Link> 
       </section>
     </main>
