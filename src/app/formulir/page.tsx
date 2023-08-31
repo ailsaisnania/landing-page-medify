@@ -2,21 +2,17 @@
 import Pagetitle from '@/components/Pagetitle'
 import { InputTextForm, SesiDemo, TahuMedify } from '@/constant'
 import React, {useState} from "react"; 
-import Datepicker from "react-tailwindcss-datepicker";
 import Link from 'next/link';
 import Button from '@/components/Button';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function page() {
-    const [value, setValue] = useState({ 
-        startDate: null, 
-        endDate: null 
-    }); 
-        
-    const handleValueChange = (newValue) => {
-        console.log("newValue:", newValue); 
-        setValue(newValue); 
-    } 
+    const [startDate, setStartDate] = useState();
 
   return (
     <main>
@@ -43,14 +39,22 @@ function page() {
                 <div className='form-control gap-6'>
                     <label className='label button-text'>Jadwalkan Demo*</label>
                     <div className='max-w-xl'>
-                        <Datepicker 
-                            primaryColor={"fuchsia"}
-                            useRange={false} 
-                            asSingle={true}
-                            value={value} 
-                            onChange={handleValueChange} 
-                            displayFormat={"DD/MM/YYYY"}
-                        /> 
+                        <div className=" h-16 flex justify-between items-center w-full input-bordered rounded-xl input px-12">
+                            <span className="h-16 w-full flex items-center">
+                            {" "}
+                            <DatePicker
+                                selected={startDate}
+                                onChange={(date) => setStartDate(date)}
+                                dayClassName={() => "example-datepicker-day-class"}
+                                popperClassName="example-datepicker-class"
+                                dateFormat="d/MM/yyyy"
+                                placeholderText={'dd/mm/yyyy'}
+                            />
+                            </span>
+                            <span className="icon">
+                            <FontAwesomeIcon icon={faCalendar}/>
+                            </span>
+                        </div>
                     </div>
                 </div>
 

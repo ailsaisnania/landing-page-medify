@@ -1,9 +1,9 @@
 import { url } from "inspector";
 
 export const NavLinks = [
-  { id: "1" , href: '/', key: 'Tentang Kami', text: 'Tentang Kami' },
+  { id: "1" , href: '/about', key: 'Tentang Kami', text: 'Tentang Kami' },
   { id: "2" ,href: '/solusi', key: 'Solusi', text: 'Solusi' },
-  { id: "3" ,href: '/', key: 'Blog', text: 'Blog' },
+  { id: "3" ,href: '/blog', key: 'Blog', text: 'Blog' },
   { id: "4" ,href: '/karier', key: 'Karier', text: 'Karier' },
 ];
 
@@ -93,5 +93,119 @@ export const KelebihanMedify = [
     icon: '/icon/userfriendly.svg',
     title: 'USER FRIENDLY',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor '
+  }
+]
+
+export const TestimoniCard = [
+  {
+    id:'1',
+    avatar: '/slider/slider2.jpg',
+    alt: 'profileImage',
+    name: 'Dr. Andre',
+    rumahSakit: 'RSAL Dr. Ramelan',
+    testimoni: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur architecto maiores qui nam, sed officiis fuga. Quaerat pariatur omnis perspiciatis. Consectetur fugit repellendus, cupiditate odio ab veritatis est qui quasi.'
+  },
+  {
+    id:'2',
+    avatar: '/slider/slider2.jpg',
+    alt: 'profileImage',
+    name: 'Dr. Dandi',
+    rumahSakit: 'RSAL Dr. Ramelan',
+    testimoni: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur architecto maiores qui nam, sed officiis fuga. Quaerat pariatur omnis perspiciatis. Consectetur fugit repellendus, cupiditate odio ab veritatis est qui quasi.'
+  },
+  {
+    id:'3',
+    avatar: '/slider/slider2.jpg',
+    alt: 'profileImage',
+    name: 'Dr. Andre',
+    rumahSakit: 'RSAL Dr. Ramelan',
+    testimoni: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur architecto maiores qui nam, sed officiis fuga. Quaerat pariatur omnis perspiciatis. Consectetur fugit repellendus, cupiditate odio ab veritatis est qui quasi.'
+  },
+  {
+    id:'4',
+    avatar: '/slider/slider2.jpg',
+    alt: 'profileImage',
+    name: 'Dr. Andre',
+    rumahSakit: 'RSAL Dr. Ramelan',
+    testimoni: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur architecto maiores qui nam, sed officiis fuga. Quaerat pariatur omnis perspiciatis. Consectetur fugit repellendus, cupiditate odio ab veritatis est qui quasi.'
+  }
+]
+
+export const SliderBlog = [
+  {
+    id: '1',
+    image: '/slider/slider1.jpg',
+    alt: 'bg image',
+    profileImage: '/tim/CTO.svg',
+    altProfile: 'Profile Image',
+    author: 'Author',
+    post: '15 Minutes Ago',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum....'
+  },
+  {
+    id: '2',
+    image: '/slider/slider2.jpg',
+    alt: 'bg image',
+    profileImage: '/tim/CTO.svg',
+    altProfile: 'Profile Image',
+    author: 'Author',
+    post: '15 Minutes Ago',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum....'
+  },
+  {
+    id: '3',
+    image: '/slider/slider3.jpg',
+    alt: 'bg image',
+    profileImage: '/tim/CTO.svg',
+    altProfile: 'Profile Image',
+    author: 'Author',
+    post: '15 Minutes Ago',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum....'
+  },
+  {
+    id: '4',
+    image: '/slider/slider4.jpg',
+    alt: 'bg image',
+    profileImage: '/tim/CTO.svg',
+    altProfile: 'Profile Image',
+    author: 'Author',
+    post: '15 Minutes Ago',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum....'
+  }
+]
+
+export const ContentBlog = [
+  {
+    id: '1',
+    image: '/blog/gambar1.svg',
+    alt: 'image',
+    title: 'Lorem Ipsum Dolor sit Amet Constecture',
+    profileImage: '/tim/CTO.svg',
+    altProfile: 'Profile Image',
+    author: 'Author',
+    post: '15 Minutes Ago',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis...'
+  },
+  {
+    id: '2',
+    image: '/blog/pict2.svg',
+    alt: 'image',
+    title: 'Lorem Ipsum Dolor sit Amet Constecture',
+    profileImage: '/tim/CTO.svg',
+    altProfile: 'Profile Image',
+    author: 'Author',
+    post: '15 Minutes Ago',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis...'
+  },
+  {
+    id: '3',
+    image: '/blog/pict3.svg',
+    alt: 'image',
+    title: 'Lorem Ipsum Dolor sit Amet Constecture',
+    profileImage: '/tim/CTO.svg',
+    altProfile: 'Profile Image',
+    author: 'Author',
+    post: '15 Minutes Ago',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis...'
   }
 ]
