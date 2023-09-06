@@ -57,14 +57,43 @@ export const TahuMedify = [
 
 export const LowonganJob = [
   {
-    id: '1',
-    pekerjaan: 'Job Title',
-    link: '/'
+    category: 'Product',
+    job: [
+      {
+        pekerjaan: 'Job Title',
+        link: 'https://glints.com/id/companies/medify/d1f70395-7fc7-44ba-bc5c-60895dbba0b7'
+      },
+      {
+        pekerjaan: 'Job Title',
+        link: 'https://glints.com/id/companies/medify/d1f70395-7fc7-44ba-bc5c-60895dbba0b7'
+      },
+      {
+        pekerjaan: 'Job Title',
+        link: 'https://glints.com/id/companies/medify/d1f70395-7fc7-44ba-bc5c-60895dbba0b7'
+      }
+    ]
   },
   {
-    id: '2',
-    pekerjaan: 'Job Title',
-    link: '/'
+    category: 'Business',
+    job: [
+      {
+        pekerjaan: 'Job Title',
+        link: 'https://glints.com/id/companies/medify/d1f70395-7fc7-44ba-bc5c-60895dbba0b7'
+      }
+    ]
+  },
+  {
+    category: 'Operational',
+    job: [
+      {
+        pekerjaan: 'Job Title',
+        link: 'https://glints.com/id/companies/medify/d1f70395-7fc7-44ba-bc5c-60895dbba0b7'
+      },
+      {
+        pekerjaan: 'Job Title',
+        link: 'https://glints.com/id/companies/medify/d1f70395-7fc7-44ba-bc5c-60895dbba0b7'
+      }
+    ]
   }
   
 ]

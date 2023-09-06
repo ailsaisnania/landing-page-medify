@@ -6,13 +6,13 @@ import Link from 'next/link'
 function index() {
   return (
     
-        <div className="p-4 lg:p-10 flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:gap-12 ">
+        <div className="p-4 lg:p-10 flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:gap-12 items-center">
             {ContentBlog.map((blog) => (
                 <div>
                     <Link href={'/blogDetail'}>
                         <div className='flex flex-col gap-4'>
                             <Image src={blog.image} width={500} height={500} className='w-60 h-60 lg:w-80 lg:h-80 ' alt={blog.alt} />
-                            <div className="px-0 text-center ">
+                            <div className="px-0 text-center max-w-xs ">
                                 <h5 className="mb-2 text-center">{blog.title}</h5>
                                 <p className="text-medify-gray-500 text-left body-2">{blog.desc}</p>
                             </div>

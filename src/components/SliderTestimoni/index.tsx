@@ -26,7 +26,7 @@ export default function Carousel() {
             settings: {
                 slidesToShow: 1,
                 autoplay: true,
-                speed: 9000,
+                speed: 900,
           }
         },
     ]
