@@ -24,10 +24,10 @@ export default function about() {
                 </div>
             </section>
 
-            <section className="px-16 py-10 lg:px-32 lg:py-16 items-center text-center">
+            <section className="w-full flex-col justify-center px-16 py-10 lg:px-32 lg:py-16 items-center text-center">
                 <h2 className="mb-16">Perjalanan Medify </h2>
                 
-                <div className="flex flex-col-3 gap-12 lg:gap-24 px-12 lg:px-24 carousel">
+                <div className="flex flex-col-3 justify-center gap-12 lg:gap-24 px-12 lg:px-24 carousel">
                     <CardFlip/>
                     <CardFlip/>
                     <CardFlip/>
@@ -95,7 +95,7 @@ export default function about() {
                     </div>
                 </div>
             </section>
-            <section className="flex flex-row gap-6 lg:gap-16 items-center px-16 pb-10 lg:px-32 lg:pb-16">
+            <section className="flex flex-row justify-center gap-6 lg:gap-16 items-center px-16 pb-10 lg:px-32 lg:pb-16">
                 <div className='flex flex-col gap-3 justify-center max-w-sm'>
                     <h2>Kami adalah <span className=" text-medify-blue-500">Medify</span></h2>
                     <p className='body-2'>

@@ -39,26 +39,14 @@ function page() {
       </section>
 
       <section className='flex flex-col gap-8 my-20'>
-        <div className='flex flex-col gap-8 padding-x'>
-          <h5>On-site</h5>
-          {LowonganJob.map((job) =>
-            <Lowongan id={job.id} jobTitle={job.pekerjaan} link={job.link}/>
-          )}
-        </div>
-
-        <div className='flex flex-col gap-8 padding-x'>
-          <h5>Work From Anywhere (WFA)</h5>
-          {LowonganJob.map((job) =>
-            <Lowongan id={job.id} jobTitle={job.pekerjaan} link={job.link}/>
-          )}
-        </div>
-
-        <div className='flex flex-col gap-8 padding-x'>
-          <h5>Blended</h5>
-          {LowonganJob.map((job) =>
-            <Lowongan id={job.id} jobTitle={job.pekerjaan} link={job.link}/>
-          )}
-        </div>
+        {LowonganJob.map((jobs, index) => (
+          <div key={index} className='flex flex-col gap-8 padding-x'>
+            <h5>{jobs.category}</h5>
+            {jobs.job.map((job, index) => (
+              <Lowongan key={index} jobTitle={job.pekerjaan} link={job.link}/>
+            ))}
+          </div>
+        ))}
       </section>
       
       
